@@ -9,6 +9,7 @@ Not all pushback procedures might be true to life. If you have any reference for
 500 bays  
 600 bays  
 300-306
+D32
 
 ## In Progress
 Work is being done on a top down basis for the cargo and remote bays north of the terminals, and clockwise basis for the terminals starting from the D gates at Terminal 1. The 400 gates are excluded as they are not present in CSA's WSSS scenery.
