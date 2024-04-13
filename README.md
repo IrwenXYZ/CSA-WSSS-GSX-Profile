@@ -11,12 +11,12 @@ Gates with Left & Right variants (e.g. D40L, D40R) will not be customised as the
 500 bays  
 600 bays  
 300-306  
-D32-D35, D40-D49
+T1 D gates
 
 ## In Progress
 Work is being done on a top down basis for the cargo and remote bays north of the terminals, and clockwise basis for the terminals starting from the D gates at Terminal 1. The 400 gates are excluded as they are not present in CSA's WSSS scenery.
 
-Working on: T1 D Gates
+T2 E gates
 
 ## References
 VDGS - page 420, 467 of WSSS AIP  
