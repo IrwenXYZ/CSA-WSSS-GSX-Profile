@@ -29,12 +29,14 @@ Please note that there has been major airspace and procedure changes as of AIRAC
 600 bays  
 300-306  
 T1 D gates
-T2 E1-2, E7, E10
+T2 E gates
 
 ## In Progress
 Work is being done on a top down basis for the cargo and remote bays north of the terminals, and clockwise basis for the terminals starting from the D gates at Terminal 1. The 400 gates are excluded as they are not present in CSA's WSSS scenery.
 
-`T2 E gates`
+## Notes
+- F36 will always show up as the first F gate due to GSX limitations
+- E6 is basically unusable right now, until the developers fix the bridge blocking the VDGS
 
 ## References
 VDGS - page 442, 488 of 21 March 2024 WSSS AIP  
