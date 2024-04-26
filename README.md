@@ -1,10 +1,17 @@
 # CSA WSSS GSX Profile
 GSX Pro Profile for CSA's WSSS scenery for MSFS. Very not done, extremely WIP.
 
+## Completed Bays
+500 bays  
+600 bays  
+300-306  
+T1 D gates  
+T2 E gates
+
 ## Installation Instructions
-Copy the downloaded file, ICAO-xxxxxx.ini, and place it in the GSX Config
-directory. Typically found in:
-`C:\Users\\AppData\Roaming\virtuali\GSX\MSFS`
+1. Ensure Microsoft Flight Simulator and GSX Pro are closed
+2. Copy the downloaded files: WSSS-CSA-IrwenXYZ.ini **AND** WSSS-CSA-IrwenXYZ.py
+3. Paste it in the GSX Config directory, typically `C:\Users\\AppData\Roaming\virtuali\GSX\MSFS`
 
 ## What this profile includes
 - Renamed gates according to terminals, cargo aprons, and remote aprons
@@ -23,13 +30,6 @@ Gates with Left & Right variants (e.g. D40L, D40R) will not be customised as the
 WSSS Charts (https://drive.google.com/drive/folders/1uRYButM_A5nqOUlmm0kG5A0sKPhCam1E)
 
 Please note that there has been major airspace and procedure changes as of AIRAC 2403. If you do not have AIRAC 2403 or after, please inform the controller!
-
-## Completed Bays
-500 bays  
-600 bays  
-300-306  
-T1 D gates  
-T2 E gates
 
 ## In Progress
 Work is being done on a top down basis for the cargo and remote bays north of the terminals, and clockwise basis for the terminals starting from the D gates at Terminal 1. The 400 gates are excluded as they are not present in CSA's WSSS scenery.
