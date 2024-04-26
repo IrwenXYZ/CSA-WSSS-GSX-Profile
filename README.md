@@ -7,6 +7,7 @@ directory. Typically found in:
 `C:\Users\\AppData\Roaming\virtuali\GSX\MSFS`
 
 ## What this profile includes
+- Renamed gates according to terminals, cargo aprons, and remote aprons
 - VATSIM compliant pushback procedures
     - All pushback procedures are based off of SINvACC's pushback procedure website (https://pushback.sinvacc.org/)
     - This includes any push/pull procedures
