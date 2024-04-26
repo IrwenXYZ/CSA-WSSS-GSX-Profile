@@ -36,5 +36,5 @@ Work is being done on a top down basis for the cargo and remote bays north of th
 `T2 E gates`
 
 ## References
-VDGS - page 420, 467 of WSSS AIP  
+VDGS - page 442, 488 of 21 March 2024 WSSS AIP  
 Pushback Procedures - https://pushback.sinvacc.org
