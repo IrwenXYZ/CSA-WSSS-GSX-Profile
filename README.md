@@ -28,7 +28,7 @@ Please note that there has been major airspace and procedure changes as of AIRAC
 500 bays  
 600 bays  
 300-306  
-T1 D gates
+T1 D gates  
 T2 E gates
 
 ## In Progress
