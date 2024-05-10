@@ -23,6 +23,18 @@ eastCargo = CustomizedName("East Cargo Apron (600-604) | Stand #", 6)
 # ^ stands 606 & 609 not in scenery
 acehub = CustomizedName("Acehub (611-612) | Stand #", 7)
 
+
+@AlternativeStopPositions
+def ChangiOffsets(aircraftData):
+    offset = {
+        747: -20,
+    }
+    
+    try:
+        return Distance.fromMeters(table.get(aircraftData.idMajor))
+    except:
+        return Distance()
+
 parkings = {
     E_PARKING : {
         None : (acehub, ),
@@ -88,7 +100,7 @@ parkings = {
         514 : (westCargo, ),
         515 : (westCargo, ),
         516 : (westCargo, ),
-        517 : (westCargo, ),
+        517 : (westCargo, ChangiOffsets),
         600 : (eastCargo, ),
         601 : (eastCargo, ),
         602 : (eastCargo, ),
