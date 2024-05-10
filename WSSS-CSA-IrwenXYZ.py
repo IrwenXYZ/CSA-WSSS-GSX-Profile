@@ -22,18 +22,24 @@ eastCargo = CustomizedName("East Cargo Apron (600-604) | Stand #", 6)
 # eastService = CustomizedName("East Service Apron | Stand #", )
 # ^ stands 606 & 609 not in scenery
 acehub = CustomizedName("Acehub (611-612) | Stand #", 7)
+parking = CustomizedName("Parking | Stand #", 0)
 
 
 @AlternativeStopPositions
 def ChangiOffsets(aircraftData):
     offset = {
-        747: -20,
+        318: 7.5,
+        319: 7.5,
+        320: 7.5,
+        330: 3.5,
+        747: 3.5,
+        787: 0,
     }
     
     try:
-        return Distance.fromMeters(table.get(aircraftData.idMajor))
+        return Distance.fromMeters(offset.get(aircraftData.idMajor))
     except:
-        return Distance()
+        return Distance.fromMeters(0)
 
 parkings = {
     E_PARKING : {
@@ -64,50 +70,50 @@ parkings = {
         None : (terminal4Golf, )
     },
     PARKING : {
-        200 : (eastRemote, ),
-        "200L" : (eastRemote, ),
-        201 : (eastRemote, ),
-        202 : (eastRemote, ),
-        203 : (eastRemote, ),
-        205 : (southEastRemote, ),
-        206 : (southEastRemote, ),
-        207 : (southEastRemote, ),
-        208 : (southEastRemote, ),
-        209 : (southEastRemote, ),
-        300 : (northRemote, ),
-        301 : (northRemote, ),
-        302 : (northRemote, ),
-        303 : (northRemote, ),
-        304 : (northRemote, ),
-        305 : (northRemote, ),
-        306 : (northRemote, ),
-        307 : (northRemote, ),
-        308 : (northRemote, ),
-        309 : (northRemote, ),
-        310 : (northRemote, ),
-        502 : (westCargo, ),
-        503 : (westCargo, ),
-        504 : (westCargo, ),
-        505 : (westCargo, ),
-        506 : (westCargo, ),
-        507 : (westCargo, ),
-        508 : (westCargo, ),
-        509 : (westCargo, ),
-        510 : (westCargo, ),
-        511 : (westCargo, ),
-        512 : (westCargo, ),
-        513 : (westCargo, ),
-        514 : (westCargo, ),
-        515 : (westCargo, ),
-        516 : (westCargo, ),
+        200 : (eastRemote, ChangiOffsets),
+        "200L" : (eastRemote, ChangiOffsets),
+        201 : (eastRemote, ChangiOffsets),
+        202 : (eastRemote, ChangiOffsets),
+        203 : (eastRemote, ChangiOffsets),
+        205 : (southEastRemote, ChangiOffsets),
+        206 : (southEastRemote, ChangiOffsets),
+        207 : (southEastRemote, ChangiOffsets),
+        208 : (southEastRemote, ChangiOffsets),
+        209 : (southEastRemote, ChangiOffsets),
+        300 : (northRemote, ChangiOffsets),
+        301 : (northRemote, ChangiOffsets),
+        302 : (northRemote, ChangiOffsets),
+        303 : (northRemote, ChangiOffsets),
+        304 : (northRemote, ChangiOffsets),
+        305 : (northRemote, ChangiOffsets),
+        306 : (northRemote, ChangiOffsets),
+        307 : (northRemote, ChangiOffsets),
+        308 : (northRemote, ChangiOffsets),
+        309 : (northRemote, ChangiOffsets),
+        310 : (northRemote, ChangiOffsets),
+        502 : (westCargo, ChangiOffsets),
+        503 : (westCargo, ChangiOffsets),
+        504 : (westCargo, ChangiOffsets),
+        505 : (westCargo, ChangiOffsets),
+        506 : (westCargo, ChangiOffsets),
+        507 : (westCargo, ChangiOffsets),
+        508 : (westCargo, ChangiOffsets),
+        509 : (westCargo, ChangiOffsets),
+        510 : (westCargo, ChangiOffsets),
+        511 : (westCargo, ChangiOffsets),
+        512 : (westCargo, ChangiOffsets),
+        513 : (westCargo, ChangiOffsets),
+        514 : (westCargo, ChangiOffsets),
+        515 : (westCargo, ChangiOffsets),
+        516 : (westCargo, ChangiOffsets),
         517 : (westCargo, ChangiOffsets),
-        600 : (eastCargo, ),
-        601 : (eastCargo, ),
-        602 : (eastCargo, ),
-        603 : (eastCargo, ),
-        604 : (eastCargo, ),
+        600 : (eastCargo, ChangiOffsets),
+        601 : (eastCargo, ChangiOffsets),
+        602 : (eastCargo, ChangiOffsets),
+        603 : (eastCargo, ChangiOffsets),
+        604 : (eastCargo, ChangiOffsets),
     },
     0 : {
-        0 : (CustomizedName("Terminal 2 F Gates | Gate F36", 2), ),
+        0 : (CustomizedName("Terminal 2 F Gates | Gate F36", 2), ChangiOffsets),
     },
 }
