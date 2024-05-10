@@ -33,13 +33,19 @@ def ChangiOffsets(aircraftData):
         320: 7.5,
         330: 3.5,
         747: 3.5,
-        787: 0,
     }
     
-    try:
-        return Distance.fromMeters(offset.get(aircraftData.idMajor))
-    except:
-        return Distance.fromMeters(0)
+    offset787 = {
+        9: 3.2,
+        10: 3.5,
+    }
+    if aircraftData.idMajor == 787:
+        return Distance.fromMeters(offset787.get(aircraftData.idMinor))
+    else:
+        try:
+            return Distance.fromMeters(offset.get(aircraftData.idMajor))
+        except:
+            return Distance.fromMeters(0)
 
 parkings = {
     E_PARKING : {
