@@ -71,32 +71,6 @@ def eastCargoOffset(aircraftData):
         except:
             return Distance.fromMeters(0)
 
-
-
-# A320 - 7.4m
-# @AlternativeStopPositions
-# def northRemoteOffset(aircraftData):
-#     offset = {
-#         310: 4.9,
-#         318: 7.4,
-#         319: 7.4,
-#         320: 7.4,
-#         330: 3.4,
-#         747: 3.4,
-#     }
-    
-#     offset787 = {
-#         9: 3.1,
-#         10: 3.4,
-#     }
-#     if aircraftData.idMajor == 787:
-#         return Distance.fromMeters(offset787.get(aircraftData.idMinor))
-#     else:
-#         try:
-#             return Distance.fromMeters(offset.get(aircraftData.idMajor))
-#         except:
-#             return Distance.fromMeters(0)
-
 # A320 - 7.3m
 @AlternativeStopPositions
 def northRemoteOffset(aircraftData):
