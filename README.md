@@ -21,7 +21,7 @@ T2 gates (E & F)
 - Proper bay sizes
 - Parking positions
 - VDGS
-- Custom stop positions (for A320 family, A330, B787, B747)
+- Custom stop positions (for A310, A320 family, A330, B787, B747)
 
 Not all pushback procedures might be true to life. If you have any reference for procedures that can be improved to be more real to life, please open an issue on Github (https://github.com/IrwenXYZ/CSA-WSSS-GSX-Profile/issues)!
 
