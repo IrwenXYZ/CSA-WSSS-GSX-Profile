@@ -164,7 +164,7 @@ parkings = {
         None : (terminal2Echo, terminalOffset)
     },
     GATE_F : {
-        None : (terminal2Foxtrot, )
+        None : (terminal2Foxtrot, terminalOffset)
     },
     GATE_G : {
         None : (terminal4Golf, )
@@ -214,6 +214,6 @@ parkings = {
         604 : (eastCargo, eastCargoOffset),
     },
     0 : {
-        0 : (CustomizedName("Terminal 2 F Gates | Gate F36", 2), ),
+        0 : (CustomizedName("Terminal 2 F Gates | Gate F36", 2), terminalOffset),
     },
 }
