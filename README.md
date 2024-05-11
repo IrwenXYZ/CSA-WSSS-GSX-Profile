@@ -6,7 +6,7 @@ GSX Pro Profile for CSA's WSSS scenery for MSFS. Very not done, extremely WIP.
 600 bays  
 300-306  
 T1 D gates  
-T2 E gates
+T2 gates (E & F)
 
 ## Installation Instructions
 1. Ensure Microsoft Flight Simulator and GSX Pro are closed
@@ -21,10 +21,11 @@ T2 E gates
 - Proper bay sizes
 - Parking positions
 - VDGS
+- Custom stop positions (for A320 family, A330, B787, B747)
 
 Not all pushback procedures might be true to life. If you have any reference for procedures that can be improved to be more real to life, please open an issue on Github (https://github.com/IrwenXYZ/CSA-WSSS-GSX-Profile/issues)!
 
-Gates with Left & Right variants (e.g. D40L, D40R) will not be customised as they are not being used in VATSIM.
+Gates with Left & Right variants (e.g. D40L, D40R) will not be customised for now.
 
 ## Flying in or out of WSSS? Take note of the following!
 WSSS Charts (https://drive.google.com/drive/folders/1uRYButM_A5nqOUlmm0kG5A0sKPhCam1E)
@@ -36,6 +37,7 @@ Work is being done on a top down basis for the cargo and remote bays north of th
 
 ## Notes
 - F36 will always show up as the first F gate due to GSX limitations
+- G gates will show up as 2 sections until a find a fix
 - E6 is basically unusable right now, until the developers fix the bridge blocking the VDGS
 
 ## References
