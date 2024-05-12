@@ -146,7 +146,7 @@ parkings = {
         None : (acehub, acehubOffset),
     },
     GATE : {
-        None : (CustomizedName("Terminal 4 G Gates| Gate G#", 4), )
+        None : (CustomizedName("Terminal 4 G Gates | Gate G#", 4), terminalOffset)
     },
     GATE_A : {
         None : (terminal3Alpha, )
@@ -167,7 +167,7 @@ parkings = {
         None : (terminal2Foxtrot, terminalOffset)
     },
     GATE_G : {
-        None : (terminal4Golf, )
+        None : (CustomizedName("Terminal 4 G Gates | Gate G#§", 4), terminalOffset)
     },
     PARKING : {
         200 : (eastRemote, terminalOffset),
