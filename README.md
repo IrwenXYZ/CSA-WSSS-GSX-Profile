@@ -37,7 +37,7 @@ Work is being done on a top down basis for the cargo and remote bays north of th
 
 ## Notes
 - F36 will always show up as the first F gate due to GSX limitations
-- G gates will show up as 2 sections until a find a fix
+- G1's pushback procedure will not be correct until CSA removes the current construction site there
 - E6 is basically unusable right now, until the developers fix the bridge blocking the VDGS
 
 ## References
