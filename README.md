@@ -7,6 +7,7 @@ GSX Pro Profile for CSA's WSSS scenery for MSFS. Very not done, extremely WIP.
 300-306  
 T1 D gates  
 T2 gates (E & F)
+T4 gates (G)
 
 ## Installation Instructions
 1. Ensure Microsoft Flight Simulator and GSX Pro are closed
