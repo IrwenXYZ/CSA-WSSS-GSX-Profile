@@ -162,7 +162,7 @@ parkings = {
         None : (terminal3Alpha, terminalOffset)
     },
     GATE_B : {
-        None : (terminal3Bravo, )
+        None : (terminal3Bravo, terminalOffset)
     },
     GATE_C : {
         None : (terminal1Charlie, )
