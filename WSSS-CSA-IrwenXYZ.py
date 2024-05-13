@@ -33,6 +33,7 @@ def westCargoOffset(aircraftData):
         319: 7.5,
         320: 7.5,
         330: 3.5,
+        737: 4,
         747: 3.5,
     }
     
@@ -40,6 +41,7 @@ def westCargoOffset(aircraftData):
         9: 3.2,
         10: 3.5,
     }
+    
     if aircraftData.idMajor == 787:
         return Distance.fromMeters(offset787.get(aircraftData.idMinor))
     else:
@@ -56,6 +58,7 @@ def eastCargoOffset(aircraftData):
         319: 7.5,
         320: 7.5,
         330: 3.5,
+        737: 4,
         747: 3.5,
     }
     
@@ -63,6 +66,7 @@ def eastCargoOffset(aircraftData):
         9: 3.2,
         10: 3.5,
     }
+    
     if aircraftData.idMajor == 787:
         return Distance.fromMeters(offset787.get(aircraftData.idMinor))
     else:
@@ -80,6 +84,7 @@ def northRemoteOffset(aircraftData):
         319: 7.3,
         320: 7.3,
         330: 3.3,
+        737: 3.8,
         747: 3.3,
     }
     
@@ -87,6 +92,7 @@ def northRemoteOffset(aircraftData):
         9: 3,
         10: 3.3,
     }
+    
     if aircraftData.idMajor == 787:
         return Distance.fromMeters(offset787.get(aircraftData.idMinor))
     else:
@@ -103,6 +109,7 @@ def acehubOffset(aircraftData):
         319: 7.3,
         320: 7.3,
         330: 3.3,
+        737: 3.8,
         747: 3.3,
     }
     
@@ -110,6 +117,7 @@ def acehubOffset(aircraftData):
         9: 3,
         10: 3.3,
     }
+    
     if aircraftData.idMajor == 787:
         return Distance.fromMeters(offset787.get(aircraftData.idMinor))
     else:
@@ -126,6 +134,7 @@ def terminalOffset(aircraftData):
         319: 7.3,
         320: 7.3,
         330: 3.3,
+        737: 3.8,
         747: 3.3,
     }
     
@@ -133,6 +142,7 @@ def terminalOffset(aircraftData):
         9: 3,
         10: 3.3,
     }
+    
     if aircraftData.idMajor == 787:
         return Distance.fromMeters(offset787.get(aircraftData.idMinor))
     else:
