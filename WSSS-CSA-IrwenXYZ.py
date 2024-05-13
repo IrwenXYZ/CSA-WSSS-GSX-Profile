@@ -26,32 +26,7 @@ parking = CustomizedName("Parking | Stand #", 0)
 
 # A320 - 7.5m
 @AlternativeStopPositions
-def westCargoOffset(aircraftData):
-    offset = {
-        310: 5,
-        318: 7.5,
-        319: 7.5,
-        320: 7.5,
-        330: 3.5,
-        737: 4,
-        747: 3.5,
-    }
-    
-    offset787 = {
-        9: 3.2,
-        10: 3.5,
-    }
-    
-    if aircraftData.idMajor == 787:
-        return Distance.fromMeters(offset787.get(aircraftData.idMinor))
-    else:
-        try:
-            return Distance.fromMeters(offset.get(aircraftData.idMajor))
-        except:
-            return Distance.fromMeters(0)
-
-@AlternativeStopPositions
-def eastCargoOffset(aircraftData):
+def eastWestCargoOffset(aircraftData):
     offset = {
         310: 5,
         318: 7.5,
@@ -76,56 +51,6 @@ def eastCargoOffset(aircraftData):
             return Distance.fromMeters(0)
 
 # A320 - 7.3m
-@AlternativeStopPositions
-def northRemoteOffset(aircraftData):
-    offset = {
-        310: 4.8,
-        318: 7.3,
-        319: 7.3,
-        320: 7.3,
-        330: 3.3,
-        737: 3.8,
-        747: 3.3,
-    }
-    
-    offset787 = {
-        9: 3,
-        10: 3.3,
-    }
-    
-    if aircraftData.idMajor == 787:
-        return Distance.fromMeters(offset787.get(aircraftData.idMinor))
-    else:
-        try:
-            return Distance.fromMeters(offset.get(aircraftData.idMajor))
-        except:
-            return Distance.fromMeters(0)
-
-@AlternativeStopPositions
-def acehubOffset(aircraftData):
-    offset = {
-        310: 4.8,
-        318: 7.3,
-        319: 7.3,
-        320: 7.3,
-        330: 3.3,
-        737: 3.8,
-        747: 3.3,
-    }
-    
-    offset787 = {
-        9: 3,
-        10: 3.3,
-    }
-    
-    if aircraftData.idMajor == 787:
-        return Distance.fromMeters(offset787.get(aircraftData.idMinor))
-    else:
-        try:
-            return Distance.fromMeters(offset.get(aircraftData.idMajor))
-        except:
-            return Distance.fromMeters(0)
-
 @AlternativeStopPositions
 def terminalOffset(aircraftData):
     offset = {
@@ -153,7 +78,7 @@ def terminalOffset(aircraftData):
 
 parkings = {
     E_PARKING : {
-        None : (acehub, acehubOffset),
+        None : (acehub, terminalOffset),
     },
     GATE : {
         None : (CustomizedName("Terminal 4 G Gates | Gate G#", 4), terminalOffset)
@@ -165,7 +90,7 @@ parkings = {
         None : (terminal3Bravo, terminalOffset)
     },
     GATE_C : {
-        None : (terminal1Charlie, )
+        None : (terminal1Charlie, terminalOffset)
     },
     GATE_D : {
         None : (terminal1Delta, terminalOffset)
@@ -190,38 +115,38 @@ parkings = {
         207 : (southEastRemote, terminalOffset),
         208 : (southEastRemote, terminalOffset),
         209 : (southEastRemote, terminalOffset),
-        300 : (northRemote, northRemoteOffset),
-        301 : (northRemote, northRemoteOffset),
-        302 : (northRemote, northRemoteOffset),
-        303 : (northRemote, northRemoteOffset),
-        304 : (northRemote, northRemoteOffset),
-        305 : (northRemote, northRemoteOffset),
-        306 : (northRemote, northRemoteOffset),
-        307 : (northRemote, northRemoteOffset),
-        308 : (northRemote, northRemoteOffset),
-        309 : (northRemote, northRemoteOffset),
-        310 : (northRemote, northRemoteOffset),
-        502 : (westCargo, westCargoOffset),
-        503 : (westCargo, westCargoOffset),
-        504 : (westCargo, westCargoOffset),
-        505 : (westCargo, westCargoOffset),
-        506 : (westCargo, westCargoOffset),
-        507 : (westCargo, westCargoOffset),
-        508 : (westCargo, westCargoOffset),
-        509 : (westCargo, westCargoOffset),
-        510 : (westCargo, westCargoOffset),
-        511 : (westCargo, westCargoOffset),
-        512 : (westCargo, westCargoOffset),
-        513 : (westCargo, westCargoOffset),
-        514 : (westCargo, westCargoOffset),
-        515 : (westCargo, westCargoOffset),
-        516 : (westCargo, westCargoOffset),
-        517 : (westCargo, westCargoOffset),
-        600 : (eastCargo, eastCargoOffset),
-        601 : (eastCargo, eastCargoOffset),
-        602 : (eastCargo, eastCargoOffset),
-        603 : (eastCargo, eastCargoOffset),
-        604 : (eastCargo, eastCargoOffset),
+        300 : (northRemote, terminalOffset),
+        301 : (northRemote, terminalOffset),
+        302 : (northRemote, terminalOffset),
+        303 : (northRemote, terminalOffset),
+        304 : (northRemote, terminalOffset),
+        305 : (northRemote, terminalOffset),
+        306 : (northRemote, terminalOffset),
+        307 : (northRemote, terminalOffset),
+        308 : (northRemote, terminalOffset),
+        309 : (northRemote, terminalOffset),
+        310 : (northRemote, terminalOffset),
+        502 : (westCargo, eastWestCargoOffset),
+        503 : (westCargo, eastWestCargoOffset),
+        504 : (westCargo, eastWestCargoOffset),
+        505 : (westCargo, eastWestCargoOffset),
+        506 : (westCargo, eastWestCargoOffset),
+        507 : (westCargo, eastWestCargoOffset),
+        508 : (westCargo, eastWestCargoOffset),
+        509 : (westCargo, eastWestCargoOffset),
+        510 : (westCargo, eastWestCargoOffset),
+        511 : (westCargo, eastWestCargoOffset),
+        512 : (westCargo, eastWestCargoOffset),
+        513 : (westCargo, eastWestCargoOffset),
+        514 : (westCargo, eastWestCargoOffset),
+        515 : (westCargo, eastWestCargoOffset),
+        516 : (westCargo, eastWestCargoOffset),
+        517 : (westCargo, eastWestCargoOffset),
+        600 : (eastCargo, eastWestCargoOffset),
+        601 : (eastCargo, eastWestCargoOffset),
+        602 : (eastCargo, eastWestCargoOffset),
+        603 : (eastCargo, eastWestCargoOffset),
+        604 : (eastCargo, eastWestCargoOffset),
     },
     0 : {
         0 : (CustomizedName("Terminal 2 F Gates | Gate F36", 2), terminalOffset),
