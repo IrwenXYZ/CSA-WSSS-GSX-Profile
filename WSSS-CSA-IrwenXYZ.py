@@ -159,7 +159,7 @@ parkings = {
         None : (CustomizedName("Terminal 4 G Gates | Gate G#", 4), terminalOffset)
     },
     GATE_A : {
-        None : (terminal3Alpha, )
+        None : (terminal3Alpha, terminalOffset)
     },
     GATE_B : {
         None : (terminal3Bravo, )
