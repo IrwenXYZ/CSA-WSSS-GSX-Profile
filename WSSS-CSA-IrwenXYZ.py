@@ -28,15 +28,16 @@ parking = CustomizedName("Parking | Stand #", 0)
 @AlternativeStopPositions
 def eastWestCargoOffset(aircraftData):
     offset = {
-	300: 5,
-        310: 5,
-        318: 7.5,
-        319: 7.5,
-        320: 7.5,
-        330: 3.5,
-        737: 5.1,
-        747: 3.5,
-	777: 3.5,
+    300: 5,
+    310: 5,
+    318: 7.5,
+    319: 7.5,
+    320: 7.5,
+    330: 3.5,
+    737: 5.1,
+    747: 3.5,
+    777: 3.5,
+    380: 3.4
     }
     
     offset787 = {
@@ -57,15 +58,16 @@ def eastWestCargoOffset(aircraftData):
 @AlternativeStopPositions
 def terminalOffset(aircraftData):
     offset = {
-	300: 4.8,
-        310: 4.8,
-        318: 7.3,
-        319: 7.3,
-        320: 7.3,
-        330: 3.3,
-        737: 4.8,
-        747: 3.3,
-	777: 3.2,
+    300: 4.8,
+    310: 4.8,
+    318: 7.3,
+    319: 7.3,
+    320: 7.3,
+    330: 3.3,
+    737: 4.8,
+    747: 3.3,
+    777: 3.2,
+    380: 3.2
     }
     
     offset787 = {

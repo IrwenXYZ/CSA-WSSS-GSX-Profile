@@ -27,6 +27,7 @@ WSSS Charts (https://drive.google.com/drive/folders/1uRYButM_A5nqOUlmm0kG5A0sKPh
 Please note that there has been major airspace and procedure changes as of AIRAC 2403. If you do not have AIRAC 2403 or after, please inform the controller!
 
 ## Notes
+- Please enable "Automated reposition" in GSX settings
 - F36 will always show up as the first F gate due to GSX limitations
 - G1's pushback procedure will not be correct until CSA removes the current construction site there
 
