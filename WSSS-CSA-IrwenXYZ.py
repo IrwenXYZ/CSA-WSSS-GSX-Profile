@@ -24,26 +24,25 @@ eastCargo = CustomizedName("East Cargo Apron (600-604) | Stand #", 6)
 acehub = CustomizedName("Acehub (611-612) | Stand #", 7)
 parking = CustomizedName("Parking | Stand #", 0)
 
-# A320 - 7.5m
 @AlternativeStopPositions
 def eastWestCargoOffset(aircraftData):
     offset = {
-    300: 5,
-    310: 5,
-    318: 7.5,
-    319: 7.5,
-    320: 7.5,
-    330: 3.5,
+    300: 7.4,
+    310: 7.4,
+    318: 5.2,
+    319: 5.2,
+    320: 5.2,
+    330: 7.4,
     737: 5.1,
-    747: 3.5,
-    777: 3.5,
-    380: 3.4
+    747: 9,
+    777: 8.9,
+    380: 9
     }
     
     offset787 = {
-	8: 3.2,
-        9: 3.2,
-        10: 3.5,
+	8: 8.7,
+        9: 8.7,
+        10: 9,
     }
     
     if aircraftData.idMajor == 787:
@@ -54,26 +53,25 @@ def eastWestCargoOffset(aircraftData):
         except:
             return Distance.fromMeters(0)
 
-# A320 - 7.3m
 @AlternativeStopPositions
 def terminalOffset(aircraftData):
     offset = {
-    300: 4.8,
-    310: 4.8,
-    318: 7.3,
-    319: 7.3,
-    320: 7.3,
-    330: 3.3,
+    300: 7.2,
+    310: 7.2,
+    318: 4.9,
+    319: 4.9,
+    320: 4.9,
+    330: 7.2,
     737: 4.8,
-    747: 3.3,
-    777: 3.2,
-    380: 3.2
+    747: 8.8,
+    777: 8.7,
+    380: 8.8
     }
     
     offset787 = {
-	8: 3,
-        9: 3,
-        10: 3.3,
+	8: 8.5,
+        9: 8.5,
+        10: 8.8,
     }
     
     if aircraftData.idMajor == 787:
