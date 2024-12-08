@@ -40,7 +40,7 @@ def eastWestCargoOffset(aircraftData):
     }
     
     offset787 = {
-	8: 8.7,
+        8: 8.7,
         9: 8.7,
         10: 9,
     }
@@ -69,7 +69,7 @@ def terminalOffset(aircraftData):
     }
     
     offset787 = {
-	8: 8.5,
+        8: 8.5,
         9: 8.5,
         10: 8.8,
     }
