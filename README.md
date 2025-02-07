@@ -8,18 +8,14 @@ GSX Pro Profile for CSA's WSSS scenery for MSFS.
 
 ## What this profile includes
 - Renamed gates according to terminals, cargo aprons, and remote aprons
-- VATSIM compliant pushback procedures
-    - All pushback procedures are based off of SINvACC's pushback procedure website (https://pushback.sinvacc.org/)
-    - This includes any push/pull procedures
+- VATSIM compliant pushback procedures (based on https://pushback.sinvacc.org)
 - Proper bay sizes
 - Parking positions
-- Custom stop positions (for A310, A320 family, A330, B787, B747)
-- Custom vehicle positions (credits to Jqro for his work)
+- Custom stop positions (for A310, A320 family, A339, A380, B787, B747, B777)
+- Custom vehicle positions
 - VDGS
 
 Not all pushback procedures might be true to life. If you have any reference for procedures that can be improved to be more real to life, please open an issue on Github (https://github.com/IrwenXYZ/CSA-WSSS-GSX-Profile/issues)!
-
-Gates with Left & Right variants (e.g. D40L, D40R) will not be customised for now.
 
 ## Flying in or out of WSSS? Take note of the following!
 WSSS Charts (https://drive.google.com/drive/folders/1uRYButM_A5nqOUlmm0kG5A0sKPhCam1E)
@@ -32,5 +28,5 @@ Please note that there has been major airspace and procedure changes as of AIRAC
 - G1's pushback procedure will not be correct until CSA removes the current construction site there
 
 ## References
-VDGS - page 442, 488 of 21 March 2024 WSSS AIP  
+VDGS - page 443, 488 of [26 December 2024 WSSS AIP](https://aim-sg.caas.gov.sg/wp-content/uploads/aip/AIP%20SINGAPORE%20-%2026%20DEC%202024.pdf?s=DC40A15F371F3CB55C23EDFD144C3D54993B9AB0)  
 Pushback Procedures - https://pushback.sinvacc.org
