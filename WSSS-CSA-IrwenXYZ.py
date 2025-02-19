@@ -67,13 +67,13 @@ def terminalOffset(aircraftData):
     777: 8.7,
     380: 8.8
     }
-    
+
     offset787 = {
-	8: 8.5,
+        8: 8.5,
         9: 8.5,
         10: 8.8,
     }
-    
+
     if aircraftData.idMajor == 787:
         return Distance.fromMeters(offset787.get(aircraftData.idMinor))
     else:
