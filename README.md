@@ -11,7 +11,7 @@ GSX Pro Profile for CSA's WSSS scenery for MSFS.
 - VATSIM compliant pushback procedures (based on https://pushback.sinvacc.org)
 - Proper bay sizes
 - Parking positions
-- Custom stop positions (for A310, A320 family, A339, A380, B787, B747, B777)
+- Custom stop positions (for A310, A320 family, A339, A350, A380, B787, B747, B777)
 - Custom vehicle positions
 - VDGS
 
