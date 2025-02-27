@@ -33,18 +33,19 @@ def eastWestCargoOffset(aircraftData):
     319: 5.2,
     320: 5.2,
     330: 7.4,
+    350: 9.1,
+    380: 9,
     737: 5.1,
     747: 9,
-    777: 8.9,
-    380: 9
+    777: 8.9
     }
-    
+
     offset787 = {
         8: 8.7,
         9: 8.7,
         10: 9,
     }
-    
+
     if aircraftData.idMajor == 787:
         return Distance.fromMeters(offset787.get(aircraftData.idMinor))
     else:
@@ -62,18 +63,19 @@ def terminalOffset(aircraftData):
     319: 4.9,
     320: 4.9,
     330: 7.2,
+    350: 8.8,
+    380: 8.8,
     737: 4.8,
     747: 8.8,
-    777: 8.7,
-    380: 8.8
+    777: 8.7
     }
-    
+
     offset787 = {
         8: 8.5,
         9: 8.5,
         10: 8.8,
     }
-    
+
     if aircraftData.idMajor == 787:
         return Distance.fromMeters(offset787.get(aircraftData.idMinor))
     else:
