@@ -8,9 +8,29 @@ Like my work? Support me at https://ko-fi.com/irwenxyz
 - VATSIM compliant pushback procedures (based on https://pushback.sinvacc.org)
 - Proper bay sizes
 - Parking positions
-- Custom stop positions (for A310, A320, A330, A350, A380, B787, B747, B777)
 - Custom vehicle positions
 - VDGS for all gates that have them in real world
+
+### Parking Positions
+This profile includes proper parking positions for the following aircraft types
+- A300 (600)
+- A310 (300)
+- A320 (A318-A321)
+- A330 (900)
+- A340
+- A350 (900, 1000)
+- A380 (800)
+- B737 (600-900)
+- B747 (8i)
+- B777 (200, 300)
+- B787 (9-10, -8 is present but untested)
+- Concorde
+- E170
+- E175
+- E190
+- E195
+
+NOTE: For Embraer aircrafts to work, the aircraft GSX profile MUST be populated with their respective ICAO codes (E170, E175, E190, or E195)
 
 ## Installation
 1. Ensure Microsoft Flight Simulator and GSX Pro are closed

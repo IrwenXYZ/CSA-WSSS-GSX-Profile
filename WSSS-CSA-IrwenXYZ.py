@@ -27,26 +27,54 @@ parking = CustomizedName("Parking | Stand #", 0)
 @AlternativeStopPositions
 def eastWestCargoOffset(aircraftData):
     offset = {
-    300: 7.4,
-    310: 7.4,
-    318: 5.2,
-    319: 5.2,
-    320: 5.2,
-    330: 7.4,
-    350: 9.1,
-    380: 9,
-    737: 5.1,
-    747: 9,
-    777: 8.9
+        0: 0,
+        170: 5.2,
+        175: 5.2,
+        190: 5.2,
+        195: 5.2,
+        300: 7.4,
+        310: 7.5,
+        318: 5,
+        319: 5,
+        320: 5.1,
+        321: 5.2,
+        330: 7.4,
+        340: 7.5,
+        380: 9,
+        747: 9.2,
+        20000: 3.5, # concorde
+    }
+
+    offset350 = {
+        900: 9.1,
+        1000: 9.1,
+    }
+
+    offset737 = {
+        600: 5.2,
+        700: 5.2,
+        800: 5.2,
+        900: 5.2,
+    }
+
+    offset777 = {
+        200: 9.1,
+        300: 9.1,
     }
 
     offset787 = {
-        8: 8.7,
-        9: 8.7,
+        8: 8.9,
+        9: 8.9,
         10: 9,
     }
 
-    if aircraftData.idMajor == 787:
+    if aircraftData.idMajor == 350:
+        return Distance.fromMeters(offset350.get(aircraftData.idMinor))
+    elif aircraftData.idMajor == 737:
+        return Distance.fromMeters(offset737.get(aircraftData.idMinor))
+    elif aircraftData.idMajor == 777:
+        return Distance.fromMeters(offset777.get(aircraftData.idMinor))
+    elif aircraftData.idMajor == 787:
         return Distance.fromMeters(offset787.get(aircraftData.idMinor))
     else:
         try:
@@ -57,26 +85,54 @@ def eastWestCargoOffset(aircraftData):
 @AlternativeStopPositions
 def terminalOffset(aircraftData):
     offset = {
-    300: 7.2,
-    310: 7.2,
-    318: 4.9,
-    319: 4.9,
-    320: 4.9,
-    330: 7.2,
-    350: 8.8,
-    380: 8.8,
-    737: 4.8,
-    747: 8.8,
-    777: 8.7
+        0: 0,
+        170: 4.8,
+        175: 4.8,
+        190: 5,
+        195: 5,
+        300: 7.2,
+        310: 7.2,
+        318: 4.7,
+        319: 4.7,
+        320: 4.8,
+        321: 4.8,
+        330: 7.2,
+        340: 7.2,
+        380: 8.8,
+        747: 8.8,
+        20000: 3.2, # concorde
+    }
+
+    offset350 = {
+        900: 8.8,
+        1000: 8.8,
+    }
+
+    offset737 = {
+        600: 4.7,
+        700: 4.7,
+        800: 4.7,
+        900: 4.7,
+    }
+
+    offset777 = {
+        200: 8.8,
+        300: 8.7,
     }
 
     offset787 = {
-        8: 8.5,
-        9: 8.5,
+        8: 8.7,
+        9: 8.7,
         10: 8.8,
     }
 
-    if aircraftData.idMajor == 787:
+    if aircraftData.idMajor == 350:
+        return Distance.fromMeters(offset350.get(aircraftData.idMinor))
+    elif aircraftData.idMajor == 737:
+        return Distance.fromMeters(offset737.get(aircraftData.idMinor))
+    elif aircraftData.idMajor == 777:
+        return Distance.fromMeters(offset777.get(aircraftData.idMinor))
+    elif aircraftData.idMajor == 787:
         return Distance.fromMeters(offset787.get(aircraftData.idMinor))
     else:
         try:
